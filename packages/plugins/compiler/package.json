@@ -1,5 +1,5 @@
 {
-    "name": "@jui/service",
+    "name": "@jui/compiler",
     "version": "0.1.0",
     "scripts": {
       "build": "tsc",

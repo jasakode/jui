@@ -51,15 +51,12 @@ importers:
 
   packages/jui:
     dependencies:
-      '@jui/alpinejs':
+      '@jui/panel':
         specifier: workspace:*
-        version: link:../integrations/alpinejs
+        version: link:../plugins/panel
       '@jui/service':
         specifier: workspace:*
         version: link:../plugins/service
-      '@jui/tailwind':
-        specifier: workspace:*
-        version: link:../integrations/tailwind
       ts-loader:
         specifier: ^9.5.1
         version: 9.5.1(typescript@5.6.3)(webpack@5.96.1)
@@ -92,6 +89,37 @@ importers:
         specifier: ^8.11.0
         version: 8.14.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3)
 
+  packages/plugins/compiler:
+    devDependencies:
+      '@types/node':
+        specifier: ^18.17.8
+        version: 18.19.64
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.11.0
+        version: 8.14.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3)
+
+  packages/plugins/panel:
+    dependencies:
+      '@jui/alpinejs':
+        specifier: workspace:*
+        version: link:../../integrations/alpinejs
+      '@jui/tailwind':
+        specifier: workspace:*
+        version: link:../../integrations/tailwind
+    devDependencies:
+      '@types/node':
+        specifier: ^18.17.8
+        version: 18.19.64
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.11.0
+        version: 8.14.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3)
+
   packages/plugins/service:
     devDependencies:
       '@types/node':
@@ -100,6 +128,9 @@ importers:
       typescript:
         specifier: ~5.6.3
         version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.11.0
+        version: 8.14.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3)
 
 packages:
 

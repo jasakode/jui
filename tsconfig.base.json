@@ -13,12 +13,13 @@
     "baseUrl": ".",
     "paths": {
       "jui": ["packages/*"],
-      "@jui/*": ["packages/integrations/*", "packages/plugins/*"]
+      "@jui/*": [
+        "packages/plugins/*",
+        "packages/integrations/*"
+      ]
     },
-
   },
   "include": ["packages/*/src"]
 }
-  
 
 

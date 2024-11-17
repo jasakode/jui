@@ -49,9 +49,8 @@
     "@types/prettier": "^2.7.3"
   },
   "dependencies": {
-    "@jui/tailwind": "workspace:*",
     "@jui/service": "workspace:*",
-    "@jui/alpinejs": "workspace:*",
+    "@jui/panel": "workspace:*",
     "webpack": "^5.96.1",
     "ts-loader": "^9.5.1"
   }
