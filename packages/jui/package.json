@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@jui/tailwind": "workspace:*",
+    "@jui/service": "workspace:*",
     "webpack": "^5.96.1",
     "ts-loader": "^9.5.1"
   }
