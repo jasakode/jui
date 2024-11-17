@@ -1,0 +1,33 @@
+{
+  "name": "@jui/tailwind",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.17.8",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-load-config": "^4.0.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

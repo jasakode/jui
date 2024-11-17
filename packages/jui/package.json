@@ -1,0 +1,56 @@
+{
+  "name": "jui",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc" 
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./config": {
+      "types": "./config.d.ts",
+      "default": "./dist/config/index.js"
+    },
+    "./service": {
+      "types": "./dist/plugins/service/index.d.ts",
+      "default": "./dist/plugins/service/index.js"
+    },
+    "./compiler": {
+      "types": "./dist/plugins/compiler/index.d.ts",
+      "default": "./dist/plugins/compiler/index.js"
+    },
+    "./integrations": {
+      "types": "./dist/integrations/index.d.ts",
+      "default": "./dist/integrations/index.js"
+    }
+  },
+  "bin": {
+    "jui": "bin/index.js" 
+  },
+  "files": [
+    "dist",
+    "bin",
+    "config.d.ts"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.17.8",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "@types/jsdom": "^21.1.7",
+    "jsdom": "^25.0.1",
+    "@types/webpack": "^5.28.5",
+    "webpack": "^5.96.1",
+    "prettier": "^3.3.3",
+    "@types/prettier": "^2.7.3"
+  },
+  "dependencies": {
+    "@jui/tailwind": "workspace:*",
+    "webpack": "^5.96.1",
+    "ts-loader": "^9.5.1"
+  }
+}
