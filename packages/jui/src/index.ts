@@ -48,6 +48,12 @@ export default async function run() {
             const cache = new Cache();
             cache.delete();
         break;
+        case "version":
+            console.log("Jui Version @0.1.0")
+            break;
+        case "-v":
+            console.log("Jui Version @0.1.0")
+            break;
         default:
             throw Error("command not found.");
         break;

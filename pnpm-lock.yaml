@@ -70,6 +70,15 @@ importers:
         specifier: ^8.11.0
         version: 8.14.0(eslint@9.14.0(jiti@1.21.6))(typescript@5.6.3)
 
+  packages/plugins/jui-service:
+    devDependencies:
+      '@types/node':
+        specifier: ^18.17.8
+        version: 18.19.64
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+
 packages:
 
   '@alloc/quick-lru@5.2.0':
